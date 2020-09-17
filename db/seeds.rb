@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+20.times do
+    Quote.create!(
+        author: Faker::Name.unique,
+        sentence: Faker::Quote.most_interesting_man_in_the_world
+    )
+end
