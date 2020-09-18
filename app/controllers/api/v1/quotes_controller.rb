@@ -11,7 +11,7 @@ class Api::V1::QuotesController < ApiController
     end
 
     def random
-        r = rand(1...20)
+        r = rand(1...50)
         @random_quote ||= Quote.find(r)
         render json: @random_quote, status: :ok
     end
