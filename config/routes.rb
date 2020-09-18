@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "api/v1/quotes#random"
+
   namespace :api do
     namespace :v1 do
       resources :quotes
