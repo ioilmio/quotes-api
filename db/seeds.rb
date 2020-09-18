@@ -8,7 +8,7 @@
 require 'faker'
 20.times do
     Quote.create!(
-        author: Faker::Name.unique,
+        author: Faker::Name.name,
         sentence: Faker::Quote.most_interesting_man_in_the_world
     )
 end
