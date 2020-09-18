@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
-20.times do
+50.times do
     Quote.create!(
         author: Faker::Name.name,
-        sentence: Faker::Quote.most_interesting_man_in_the_world
+        sentence: Faker::Quote.famous_last_words
     )
 end
