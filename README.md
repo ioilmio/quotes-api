@@ -21,4 +21,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-test for comment and revies flow
+test for comment and reviews flow
+with comment and summary
